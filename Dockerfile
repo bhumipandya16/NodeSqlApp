@@ -1,7 +1,7 @@
-FROM node:7
+FROM node:10.16.0
 WORKDIR /app
 COPY package.json /app
 RUN npm install
 COPY . /app
-CMD node app.js
+CMD npm run start
 EXPOSE 3000
